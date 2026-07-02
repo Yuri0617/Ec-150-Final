@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ec-150 Signal Log ｜ 宇宙訊號航行紀錄</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Noto+Sans+TC:wght@300;400;500;700&family=Caveat:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="logo">EC<span>-150</span></div>
+  <button class="nav-toggle" id="navToggle">MENU</button>
+  <ul id="navList">
+    <li><a href="#about">About</a></li>
+    <li><a href="#system">System</a></li>
+    <li><a href="#logs">Signal Logs</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</header>
+
+<section class="hero">
+  <div class="status"><span class="dot"></span>STATUS: ACTIVE — AWAITING NEW SIGNAL...</div>
+  <div class="radar">
+    <div class="radar-sweep"></div>
+    <svg viewBox="0 0 200 200">
+      <circle cx="100" cy="100" r="90" fill="none" stroke="#4FD1E8" stroke-opacity="0.5" stroke-width="1"/>
+      <circle cx="100" cy="100" r="65" fill="none" stroke="#4FD1E8" stroke-opacity="0.35" stroke-width="1"/>
+      <circle cx="100" cy="100" r="40" fill="none" stroke="#4FD1E8" stroke-opacity="0.25" stroke-width="1"/>
+      <line x1="100" y1="10" x2="100" y2="190" stroke="#4FD1E8" stroke-opacity="0.15"/>
+      <line x1="10" y1="100" x2="190" y2="100" stroke="#4FD1E8" stroke-opacity="0.15"/>
+      <circle cx="132" cy="70" r="3" fill="#4FD1E8"/>
+      <circle cx="70" cy="120" r="2" fill="#F7F6F3" fill-opacity="0.7"/>
+      <circle cx="140" cy="135" r="2.5" fill="#F7F6F3" fill-opacity="0.5"/>
+    </svg>
+  </div>
+  <h1>EC<span>-150</span> SIGNAL LOG</h1>
+  <p class="tagline">我相信每個人發出的訊號都需要被接收</p>
+  <p class="desc">宇宙訊號航行紀錄——一份以觀測員身份，記錄我如何接收、理解並回應他人訊號的個人紀錄。</p>
+  <a href="#about" class="btn">開始接收 →</a>
+  <div class="scroll-hint">SCROLL TO EXPLORE</div>
+</section>
+
+<section class="about" id="about">
+  <div class="about-flex">
+    <div class="astronaut-wrap">
+      <img src="./images/astronaut.png" alt="手繪太空人插畫，來自 Ec-150 Signal Log 手札">
+    </div>
+    <div class="about-inner">
+    <span class="eyebrow" style="color:var(--fade)">WHY SPACE?</span>
+    <h2 style="font-family:var(--mono); margin:0.6rem 0 1.6rem; font-size:1.6rem;">在我的宇宙裡，每個人都是一顆獨立運行的星球</h2>
+    <p>我將人與人之間的關係轉化為宇宙中的訊號系統。每個人都像一顆獨立運行的星球，擁有自己的軌跡、情緒與故事。有些訊號明顯而強烈，有些則微弱得難以察覺。</p>
+    <p>我將自己想像成一位訊號觀測員，在接收、理解與轉化訊號後，以對話、音樂或陪伴回應他人。而傾聽，對我而言就像在廣大的宇宙中搜尋訊號——透過觀察、接收與回應，我們得以與不同的星球建立連結。</p>
+    <blockquote>「我無法接收所有訊號，也無法解答所有問題，只能透過他們發出的訊號去理解他們。」</blockquote>
+    <p>而我習慣做的事情，就是接收這些訊號，試著理解它背後真正想表達的內容。</p>
+    </div>
+  </div>
+</section>
+
+<section class="system" id="system">
+  <div class="section-head">
+    <span class="eyebrow">OBSERVATION SYSTEM</span>
+    <h2>我的訊號接收流程</h2>
+    <p>從保持開放到建立雙向連結，這是我每一次「接收」他人時，實際發生的五個階段。</p>
+  </div>
+  <div class="layer-grid">
+    <div class="layer-card" onclick="openLayerModal('01')">
+      <div class="num">LAYER 01</div>
+      <h3>Observation</h3>
+      <div class="zh">觀測</div>
+      <p>保持開放，等待訊號出現。</p>
+      <div class="expand-hint">點擊查看細節 →</div>
+    </div>
+    <div class="layer-card" onclick="openLayerModal('02')">
+      <div class="num">LAYER 02</div>
+      <h3>Recognition</h3>
+      <div class="zh">辨識</div>
+      <p>發現訊號來源。</p>
+      <div class="expand-hint">點擊查看細節 →</div>
+    </div>
+    <div class="layer-card" onclick="openLayerModal('03')">
+      <div class="num">LAYER 03</div>
+      <h3>Listening</h3>
+      <div class="zh">接收</div>
+      <p>接收並理解訊號內容。</p>
+      <div class="expand-hint">點擊查看細節 →</div>
+    </div>
+    <div class="layer-card" onclick="openLayerModal('04')">
+      <div class="num">LAYER 04</div>
+      <h3>Transformation</h3>
+      <div class="zh">轉化</div>
+      <p>透過不同能力進行回應。</p>
+      <div class="expand-hint">點擊查看細節 →</div>
+    </div>
+    <div class="layer-card" onclick="openLayerModal('05')">
+      <div class="num">LAYER 05</div>
+      <h3>Connection</h3>
+      <div class="zh">連結</div>
+      <p>建立雙向訊號連線。</p>
+      <div class="expand-hint">點擊查看細節 →</div>
+    </div>
+  </div>
+</section>
+
+<section class="logs" id="logs">
+  <div class="logs-head-flex">
+    <img src="./images/logs-accent.jpg" alt="Ec-150 手札本實體照片">
+    <div class="section-head">
+      <span class="eyebrow" style="color:var(--fade)">SIGNAL LOGS</span>
+      <h2>接收記錄</h2>
+      <p style="color:var(--fade); margin-top:0.8rem; font-size:0.92rem;">以下為範例紀錄，之後可替換為真實作品或合作經驗。</p>
+    </div>
+  </div>
+  <div class="logs-grid">
+    <div class="log-card">
+      <div class="id">接收記錄 #002</div>
+      <dl>
+        <dt>訊號來源</dt><dd>SN-003</dd>
+        <dt>訊號狀態</dt><dd>微弱且斷續</dd>
+        <dt>觀測內容</dt><dd>很短的訊息，「最近有點累」，沒有原因後續。</dd>
+        <dt>回應方式</dt><dd>維持連線，簡單聊天。</dd>
+      </dl>
+      <span class="tag">Silent Nebula</span>
+    </div>
+    <div class="log-card">
+      <div class="id">接收記錄 #166</div>
+      <dl>
+        <dt>訊號來源</dt><dd>FF-017</dd>
+        <dt>訊號狀態</dt><dd>混雜</dd>
+        <dt>觀測內容</dt><dd>原本以為對方需要幫助，結果整段對話下來反而是我輸出比較多。</dd>
+        <dt>回應方式</dt><dd>角色短暫交換，由對方接收訊號。</dd>
+      </dl>
+      <span class="tag">Fragment Field</span>
+    </div>
+    <div class="log-card">
+      <div class="id">接收記錄 #218</div>
+      <dl>
+        <dt>訊號來源</dt><dd>RS-218</dd>
+        <dt>訊號狀態</dt><dd>穩定</dd>
+        <dt>觀測內容</dt><dd>長期維持連線，透過音樂與陪伴持續回應。</dd>
+        <dt>回應方式</dt><dd>定期發送訊號，確認彼此仍在航線上。</dd>
+      </dl>
+      <span class="tag">Echo Belt</span>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="section-head">
+    <span class="eyebrow">SEND A SIGNAL</span>
+    <h2>發送新訊號</h2>
+    <p>如果你也在尋找一個能接收訊號的觀測員，歡迎留下你的座標。</p>
+  </div>
+  <form class="signal-form" onsubmit="event.preventDefault(); alert('訊號已送出（示意畫面，尚未串接實際寄送功能）');">
+    <input type="text" placeholder="你的名字" required>
+    <input type="email" placeholder="你的 Email" required>
+    <textarea rows="4" placeholder="你的訊號內容..." required></textarea>
+    <button type="submit">發送訊號 →</button>
+  </form>
+</section>
+
+<footer>
+  EC-150 SIGNAL LOG ｜ STATUS: ACTIVE ｜ © 2026
+</footer>
+
+<div class="layer-modal-overlay" id="layerModalOverlay" onclick="if(event.target===this) closeLayerModal()">
+  <div class="layer-modal">
+    <button class="layer-modal-close" onclick="closeLayerModal()">✕</button>
+    <img id="layerModalImg" src="" alt="">
+    <div class="layer-modal-body">
+      <div class="num" id="layerModalNum"></div>
+      <h3 id="layerModalTitle"></h3>
+      <div class="zh" id="layerModalZh"></div>
+      <p id="layerModalDesc"></p>
+    </div>
+  </div>
+</div>
+
+<script>
+  const toggle = document.getElementById('navToggle');
+  const list = document.getElementById('navList');
+  toggle.addEventListener('click', () => list.classList.toggle('open'));
+  list.querySelectorAll('a').forEach(a => a.addEventListener('click', () => list.classList.remove('open')));
+
+  const layerData = {
+    '01': {
+      img: './images/layer-01.jpg',
+      title: 'Observation',
+      zh: '觀測',
+      desc: '保持開放，等待訊號出現。在還不知道會接收到什麼之前，先讓自己成為一個安靜、隨時待命的接收器——這是每一次連結發生之前，最容易被忽略卻最關鍵的階段。'
+    },
+    '02': {
+      img: './images/layer-02.jpg',
+      title: 'Recognition',
+      zh: '辨識',
+      desc: '發現訊號來源。從雜訊裡辨認出「這是一個需要被回應的訊號」，並試著判斷它從哪裡來、為什麼在此刻出現。'
+    },
+    '03': {
+      img: './images/layer-03.jpg',
+      title: 'Listening',
+      zh: '接收',
+      desc: '接收並理解訊號內容。不急著回應，先完整地聽懂訊號背後真正想表達的情緒與需求，避免用自己的假設覆蓋對方原本的意思。'
+    },
+    '04': {
+      img: './images/layer-04.jpg',
+      title: 'Transformation',
+      zh: '轉化',
+      desc: '透過不同能力進行回應——可能是一段對話、一首歌、一次單純的陪伴。訊號被理解之後，需要轉化成對方能感受到的形式，才算完成接收的意義。'
+    },
+    '05': {
+      img: './images/layer-05.jpg',
+      title: 'Connection',
+      zh: '連結',
+      desc: '建立雙向訊號連線。當回應被對方接收，訊號不再只是單向發送，而成為一條持續存在、可以隨時再次呼叫彼此的航線。'
+    }
+  };
+
+  function openLayerModal(id){
+    const data = layerData[id];
+    document.getElementById('layerModalImg').src = data.img;
+    document.getElementById('layerModalImg').alt = 'Layer ' + id + ' ' + data.title + ' 雷達截圖';
+    document.getElementById('layerModalNum').textContent = 'LAYER ' + id;
+    document.getElementById('layerModalTitle').textContent = data.title;
+    document.getElementById('layerModalZh').textContent = data.zh;
+    document.getElementById('layerModalDesc').textContent = data.desc;
+    document.getElementById('layerModalOverlay').classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeLayerModal(){
+    document.getElementById('layerModalOverlay').classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  document.addEventListener('keydown', (e) => {
+    if(e.key === 'Escape') closeLayerModal();
+  });
+</script>
+
+</body>
+</html>
